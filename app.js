@@ -12,7 +12,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongo.connect("mongodb+srv://pythonwork88:Vijithan88!@cluster0.ron8duo.mongodb.net/?retryWrites=true&w=majority");
+----------------------------------- mongo account needed !!! replace username and password to work -------------------
+mongo.connect("mongodb+srv://<username>:<password>@cluster0.ron8duo.mongodb.net/?retryWrites=true&w=majority");
 
 const itemsSchema = {
   name: String
